@@ -16,6 +16,7 @@ Ce projet explore une approche originale pour résoudre le problème de classifi
 Dans cet exemple, des chiffres sont dessinés. Une fois qu'un chiffre prend la couleur correcte, il est supprimé avec le bouton C, puis un autre chiffre est dessiné, et ainsi de suite. Il est également possible de dessiner sans effacer la grille. On peut même dessiner deux chiffres dans la même grille, à condition qu'ils ne se touchent pas.
 
 ![Texte alternatif](demo.gif)
+![Texte alternatif](demo2.gif)
  
 #    Sprint 0:
 
