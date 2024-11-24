@@ -55,7 +55,7 @@ F15: Ajout des courbes d'évolution de la précision (précision générale, pr�
 
 # Modèle
 
-![Texte alternatif](src/Model.png)
+![Texte alternatif](Model.png)
 
 #  Conception
 
@@ -111,7 +111,7 @@ next_img() :
 Génère l'image suivante basée sur l'état actuel de la grille, prête pour l'affichage en RGB.
 
 
-![Texte alternatif](src/tableau_desc.png)
+![Texte alternatif](tableau_desc.png)
 
 # Modules à avoir pour faire tourner le code 
 
