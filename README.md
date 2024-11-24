@@ -13,6 +13,7 @@ Chaima Baccara
 Ce projet explore une approche originale pour résoudre le problème de classification des chiffres manuscrits du dataset MNIST en utilisant des automates cellulaires neuronaux (NCA). Contrairement à l'approche classique basée sur les réseaux de neurones convolutifs (CNN), cette méthode repose sur une grille d'automates cellulaires, où chaque cellule suit des règles locales apprises par un modèle pour générer un comportement global efficace.
 
 ## Demo:
+Dans cet exemple, des chiffres sont dessinés. Une fois qu'un chiffre prend la couleur correcte, il est supprimé avec le bouton C, puis un autre chiffre est dessiné, et ainsi de suite. Il est également possible de dessiner sans effacer la grille. On peut même dessiner deux chiffres dans la même grille, à condition qu'ils ne se touchent pas.
 ![Texte alternatif](demo.gif)
  
 #    Sprint 0:
