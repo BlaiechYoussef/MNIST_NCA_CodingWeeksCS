@@ -10,7 +10,7 @@ Chaima Baccara
 
 ## Description
 
-Ce projet explore une approche originale pour résoudre le problème de classification des chiffres manuscrits du dataset MNIST en utilisant des automates cellulaires neuronaux (NCA). Contrairement à l'approche classique basée sur les réseaux de neurones convolutifs (CNN), cette méthode repose sur une grille d'automates cellulaires, où chaque cellule suit des règles locales apprises par un modèle pour générer un comportement global efficace.
+Ce projet explore une approche originale pour résoudre le problème de classification des chiffres manuscrits du dataset MNIST en utilisant des automates cellulaires neuronaux (NCA). Contrairement à l'approche classique basée sur les réseaux de neurones convolutifs (CNN), cette méthode repose sur une grille de cellules, où chaque cellule suit des règles locales apprises par un modèle pour générer un comportement global.
 
 ## Demo:
 Dans cet exemple, des chiffres sont dessinés. Une fois qu'un chiffre prend la couleur correcte, il est supprimé avec le bouton C, puis un autre chiffre est dessiné, et ainsi de suite. Il est également possible de dessiner sans effacer la grille. On peut même dessiner deux chiffres dans la même grille, à condition qu'ils ne se touchent pas.
@@ -33,6 +33,42 @@ Seuls les cellules ayant un input evolue au cours du temps
 ![Texte alternatif](UpdateRule.png)
 
 Pour le modèle final on a utilisé la fonction cout cross_entropy 
+
+# Modules à avoir pour faire tourner le code 
+
+Il faudra avoir les modules : - numpy
+                              - matplotlib (matplotlib.pyplot, matplotlib.animation)
+                              - pytorch (torch, torch.nn, torchvision, torch.utils.data, )
+                              - pygame
+                              - sys
+                              - math
+                              - random
+                              - os
+                              - PIL (Image, ImageDraw)
+                              - tqdm
+                              
+
+# Comment avoir la démo ?
+
+Il faut :  - faire tourner le code du fichier main.py
+
+           - dessiner un chiffre
+
+           - Voir si le résultat (animation) correspond à la palette suivante : 
+           
+                - 0 : rouge
+                - 1 : vert
+                - 2 : noir
+                - 3 : orange
+                - 4 : rose
+                - 5 : bleu 
+                - 6 : jaune 
+                - 7 : gris
+                - 8 : violet
+                - 9 : marron
+
+           - Pour refaire un nouveau test :
+           appuyer sur 'c' pour effacer (optionnel) et redissiner de nouveau
  
 #  Conception
 
@@ -90,46 +126,6 @@ Génère l'image suivante basée sur l'état actuel de la grille, prête pour l'
 
 ![Texte alternatif](tableau_desc.png)
 
-# Modules à avoir pour faire tourner le code 
-
-Il faudra avoir les modules : - numpy
-                              - matplotlib (matplotlib.pyplot, matplotlib.animation)
-                              - pytorch (torch, torch.nn, torchvision, torch.utils.data, )
-                              - pygame
-                              - sys
-                              - math
-                              - random
-                              - os
-                              - PIL (Image, ImageDraw)
-                              - tqdm
-                              
-
-# Comment avoir la démo ?
-
-Il faut :  - faire tourner le code du fichier main.py
-
-           - dessiner un chiffre
-
-           - Voir si le résultat (animation) correspond à la palette suivante : 
-           
-                - 0 : rouge
-                - 1 : vert
-                - 2 : noir
-                - 3 : orange
-                - 4 : rose
-                - 5 : bleu 
-                - 6 : jaune 
-                - 7 : gris
-                - 8 : violet
-                - 9 : marron
-
-           - Pour refaire un nouveau test :
-           appuyer sur 'c' pour effacer (optionnel) et redissiner de nouveau
-# MVP
-             fichier src/animation/animation_pygame.py :
-            Grâce au module pygame, on a pu créer une 
-            interface sur laquelle on dessine un chiffre qui sera 
-            reconnu selon le code couleur énoncé plutôt.
 
 # The models
 
@@ -163,10 +159,4 @@ In this model too we add a multiplication by the sigmoid applied to the last cha
     n_filters = 64
     Tmin = 50
     Tmax = 100
-
-
-## Installation
-Instructions pour installer le projet :
-
-git clone https://gitlab-cw2.centralesupelec.fr/aymen.awainia/mnist_nca.git
 
