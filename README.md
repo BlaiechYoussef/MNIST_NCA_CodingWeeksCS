@@ -17,51 +17,23 @@ Dans cet exemple, des chiffres sont dessinés. Une fois qu'un chiffre prend la c
 
 ![Texte alternatif](demo.gif)
 ![Texte alternatif](demo2.gif)
+
+# Modèle:
+La loi d'évolution de notre modèle est un réseau de neuronne:
+chaque cellule est un vecteur de dimension n_channels>=12:
+
+-La premiere composente est l'input de l'utlilisateur elle ne change pas au cours de la simulation
+
+-les 10 composante suivante representre la probabilité de chaque chiffre (après passage au softmax)
+
+-la dernière composante controle le taux de changement du vecteur de la cellue
+
+Seuls les cellues ayant input evolue au cours du temps
+
+![Texte alternatif](UpdateRule.png)
+
+Pour le modèle final on a utilisé la fonction cout cross_entropy 
  
-#    Sprint 0:
-
-F1: installation des modules nécessaitres en local: Pytorch, Matplotlib, tkinter 
-
-F2: création du repo git et version control
-
-F3: conception globale
-
-#   Sprint 1: Network Training
-
-F4: récupération & encodage du Dataset
-
-F5: Définition du modèle NCA (POO)
-
-F6: initialisation et entrainement de NCA
-
-F7: validation du modèle
-
-F8: sauvegarde des poids du modèle
-
-#    Sprint 2: Visualisation et intégration du modèle 
-
-F9: implémentation avec matplotlib.animation
-
-F10: création de la fonction main (input ==> identification par code de couleurs)
-
-#    Sprint 3: développement de l'UI:
-
-F11: Préparation de l'interface TKINTER
-
-F12: Visualisation des grilles en évolution sur TKINTER
-
-F13: création de l'outil du dessin autonome
-
-F14: Amélioration de la solution en utilisant Pygame au lieu de Tkinter 
-
-#  Sprint 4: Améliorations du projet
-
-F15: Ajout des courbes d'évolution de la précision (précision générale, précision sur chaque chiffre) et des courbes de loss lors du training
-
-# Modèle
-
-![Texte alternatif](Model.png)
-
 #  Conception
 
 Class NCA:
