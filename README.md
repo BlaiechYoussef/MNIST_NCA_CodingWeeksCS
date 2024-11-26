@@ -24,11 +24,11 @@ chaque cellule est un vecteur de dimension n_channels>=12:
 
 -La premiere composente est l'input de l'utlilisateur elle ne change pas au cours de la simulation
 
--les 10 composante suivante representre la probabilité de chaque chiffre (après passage au softmax)
+-les 10 composantes suivantes representent la probabilité de chaque chiffre (après passage au softmax)
 
--la dernière composante controle le taux de changement du vecteur de la cellue
+-la dernière composante contrôle le taux de changement du vecteur de la cellule
 
-Seuls les cellues ayant input evolue au cours du temps
+Seuls les cellules ayant un input evolue au cours du temps
 
 ![Texte alternatif](UpdateRule.png)
 
