@@ -4,7 +4,7 @@ import torch.nn as nn
 from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-def train(model, width=28, height=28, n_channels=20, n_filters=64, n_dense=128*4, tmin=50, tmax=75):
+def train(model):
     """
     This function trains the NCA model on the MNIST dataset.
     It is imported when the user wants to train or retrain the model.
